@@ -1,0 +1,13 @@
+<div class="row" [ngClass]="{'estado': cuenta.estado}">
+    <div class="nombre">
+      <input type="checkbox" [checked]="cuenta.estado" (change)="onToggle(cuenta)">
+      {{ cuenta.nombre }}
+    </div>
+    <div class="email">
+      {{ cuenta.email }}
+    </div>
+    <div class="actions">
+      <button (click)="onDelete(cuenta)">Eliminar</button>
+    </div>
+  </div>
+  

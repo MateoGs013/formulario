@@ -1,0 +1,7 @@
+<div>
+    <app-cuenta 
+    *ngFor="let cuenta of cuentas" 
+    [cuenta]="cuenta"
+    (deleteItem)="deleteItem($event)">
+    </app-cuenta>
+</div>

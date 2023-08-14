@@ -1,0 +1,16 @@
+<div class="container">
+  <form  class="form" action="" (submit)="onSubmit()">
+    <ul class="wrapper">
+      <li style="--i:10;"><input class="input" type="text" placeholder="Nombre de Usuario" required="" [(ngModel)]="id"></li>
+      <li style="--i:9;"><input class="input" type="text" placeholder="Name" required="" [(ngModel)]="nombre"></li>
+      <li style="--i:8;"><input class="input" type="text" placeholder="apellido" required="" [(ngModel)]="apellido"></li>
+      <li style="--i:7;"><input class="input" type="text" placeholder="genero" required="" [(ngModel)]="genero"></li>
+      <li style="--i:6;"><input class="input" type="date" placeholder="cumpleaños" required="" [(ngModel)]="cumpleanos"></li>
+      <li style="--i:5;"><input class="input" placeholder="Phone number" required="" name="phone" [(ngModel)]="numero"></li>
+      <li style="--i:4;"><input class="input" type="text" placeholder="direccion" required="" [(ngModel)]="direccion"></li>
+      <li style="--i:3;"><input class="input" type="email" placeholder="E-mail" required="" name="email" [(ngModel)]="email"></li>
+      <li style="--i:2;"><input class="input" type="text" placeholder="Contraseña" required="" [(ngModel)]="contrasena"></li>
+      <button style="--i:1;">Submit</button>
+    </ul>
+  </form>
+</div>
