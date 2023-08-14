@@ -1,0 +1,52 @@
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #6d74e3;
+    color: white;
+    transform-style: preserve-3d;
+    transform: perspective(500px) translateZ(0);
+    transition: transform 0.3s;
+  }
+  
+  .row.estado {
+    background-color: #575cb5;
+  }
+  
+  .row:hover {
+    transform: perspective(500px) translateZ(10px);
+  }
+  
+  .nombre {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nombre input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .email {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .actions {
+    margin-left: 10px;
+  }
+  
+  .actions button {
+    background-color: #d8daf7;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    color: #575cb5;
+    transition: background-color 0.3s;
+  }
+  
+  .actions button:hover {
+    background-color: #989deb;
+    color: white;
+  }
+  
